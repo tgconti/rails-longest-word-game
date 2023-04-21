@@ -1,0 +1,17 @@
+<div class="container p-5">
+  <div class="container">
+    <div class="d-flex" style="width: 500px">
+      <% @letras.each do |letra| %>
+        <div class="btn btn-primary m-1"><%= letra %></div>
+      <% end %>
+    </div>
+  </div>
+  <div class="container m-1">
+    <form action="/score" method="post">
+      <input type="text" name="word" placeholder="Type in the word?">
+      <button type="submit" class="btn btn-primary m-2">Send</button>
+    </form>
+  </div>
+
+
+</div>
